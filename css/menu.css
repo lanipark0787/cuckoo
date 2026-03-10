@@ -1,0 +1,102 @@
+.fixed {
+    width: 100%;
+    position: fixed;
+    /* float: left; */
+    background-color: #F2F0EB80;
+    backdrop-filter: blur(10px);
+    left: 0;
+    top: 100px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 1;
+    transition: opacity 1s;
+    box-shadow: 0 3px 5px #00000020;
+
+}
+
+.fixedContents {
+    width: 1240px;
+    height: 100%;
+    position: relative;
+    left: 310px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.fixed>div>ul {
+    height: 100px;
+    /* margin: 0 auto; */
+}
+
+.fixed>div>ul>a {
+    display: block;
+    /* line-height: 150px; */
+    /* padding: 0 100px; */
+}
+
+.sub {
+    margin-top: 100px;
+    /* width: 750px; */
+    height: 800px;
+    /* float: left; */
+
+}
+
+.sub_1 {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h4 {
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+h5 {
+    padding-left: 15px;
+    font-size: 20px;
+    color: #9E7E6B;
+    /* font-style: normal; */
+}
+
+
+
+
+.sub ul a img {
+    float: left;
+    padding: 0 20px;
+    border-left: 2px solid #FFF;
+}
+
+.sub li {
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+
+.sub p {
+    color: #2E4450;
+    font-size: 10pt;
+    font-weight: normal;
+    padding: 5px;
+}
+
+
+
+/* ************************************** */
+
+.fixed div {
+    float: left;
+}
+
+
+/* ************************************ */
+
+#gnb>ul>li:hover .fixed {
+    opacity: 1;
+    transition: opacity 1s;
+    height: 700px;
+
+}
